@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:BtnCrud="clr-namespace:UD3_LibCRUDMAUI;assembly=UD3-LibCRUDMAUI"
+             x:Class="UD3_AppCRUD.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                x:Name="imgCoche"
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a race car number eight" />
+
+            <Label
+                Text="Hello, World!"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <BtnCrud:ViewCrud x:Name="Botonera"/>
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
