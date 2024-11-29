@@ -4,7 +4,7 @@ public partial class ViewCrud : ContentView
 {
 	public Button Btnanadir => AddButton;
 
-	public Button Btnmodificar => ModifyButton;
+	public Button Btnmodificar { get { return ModifyButton; } }
 
 	public Button BtnEliminar => DeleteButton;
 
