@@ -37,9 +37,9 @@
             Botonera.Btnmodificar.TextColor = Colors.Red;
         }
 
-        private void Btnanadir_Clicked(object? sender, EventArgs e)
+        private async void Btnanadir_Clicked(object? sender, EventArgs e)
         {
-            DisplayAlert("Boton 1 pulsado", "Botón añadir pulsado", "Aceptar");
+            await DisplayAlert("Boton 1 pulsado", "Botón añadir pulsado", "Aceptar");
         }
     }
 
